@@ -1,0 +1,43 @@
+.home {
+    
+    margin-top: 100px;
+    margin-left: 24px; 
+    margin-bottom: 100px;
+  } 
+
+  /* In your CSS file (e.g., ButtonStyles.css) */
+.custom-button {
+  position: relative; /* Position relative for absolute positioning of the pseudo-element */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  color: #3f51b5; /* Button text color */
+  border: 2px solid #3f51b5; /* Border color */
+  background-color: transparent; /* Default background color */
+  transition: color 0.3s ease; /* Transition for text color */
+}
+
+.custom-button::before {
+  content: ''; /* Create a pseudo-element */
+  position: absolute; /* Position absolutely within the button */
+  top: 0; /* Align to the top */
+  left: -100%; /* Start off the left edge */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: linear-gradient(90deg, rgba(63, 81, 181, 1) 0%, rgba(63, 81, 181, 0) 100%); /* Gradient effect */
+  transition: left 0.6s ease; /* Transition for the gradient movement */
+  z-index: 0; /* Behind the button text */
+}
+
+.custom-button:hover::before {
+  left: 100%; /* Move gradient to the right on hover */
+}
+
+.custom-button:hover {
+  color: white; /* Text color on hover */
+}
+
+.custom-button span {
+  position: relative; /* Position text relative for proper stacking */
+  z-index: 1; /* Ensure text appears above the gradient */
+}
+
+ 

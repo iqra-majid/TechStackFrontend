@@ -1,0 +1,16 @@
+/* Signup.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #ffffff; 
+  }
+  
+  .paper {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%; 
+    background-color:#f6f6fc;
+  }
+  

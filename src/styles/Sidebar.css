@@ -1,0 +1,26 @@
+.sidebar {
+    width: 300px;
+    background-color:#f6f6fc; 
+    padding: 16px;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-left: 24px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .sidebar-title {
+    font-weight: bold; 
+    margin-bottom: 16px; 
+    color: #4e54c6;
+    font-size: large;
+  }
+
+  .horizontal-line {
+    margin: 10px 0; 
+    border: 0;
+    border-top:1px solid rgba(46, 45, 45, 0.5); 
+  }
+
+
+  
+
